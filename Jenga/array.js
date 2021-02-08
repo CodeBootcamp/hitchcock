@@ -1,14 +1,14 @@
 var array1 = [5,6,7,2,9]
-var array2 = [2,1,5,7,9]
+var array2 = [2,1,5,7,8,9,6]
 var array3 = []
 var n = 0  
 var b = 0
 var x = 0
 var y = 0
 // solved problem
-for(n=0; n<5; n++){
+for(n=0; n<array1.length; n++){
     
-    for(y=0; y<5; y++){
+    for(y=0; y<array2.length; y++){
         if(array1[n] == array2 [y]){
             array3[x] = array1[n]
             x++
