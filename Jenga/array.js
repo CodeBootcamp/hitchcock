@@ -1,14 +1,23 @@
-var array1 = [1,9,2,2,9]
+var array1 = [5,6,7,2,9]
 var array2 = [2,1,5,7,9]
 var array3 = []
 var n = 0  
 var b = 0
 var x = 0
 var y = 0
-
-
-
-
+// solved problem
+for(n=0; n<5; n++){
+    
+    for(y=0; y<5; y++){
+        if(array1[n] == array2 [y]){
+            array3[x] = array1[n]
+            x++
+        }
+    
+    }
+    y=0
+}
+console.log(array3)
 //third attempt
 // array3 = array2.forEach(function(value) {
 //     array1.filter(num => num >=0)
