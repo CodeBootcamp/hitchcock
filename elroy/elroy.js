@@ -1,8 +1,5 @@
 // I know their has to be an easier or neater way to write this code, but this is the only way i know how right now.
 
-
-
-
 if(b=0){
 btn.addEventListener('click', function write(){
 
@@ -78,3 +75,4 @@ if(b=1){
       
     })
 }
+
