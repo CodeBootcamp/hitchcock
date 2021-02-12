@@ -1,4 +1,4 @@
-var array1 = [5,6,7,2,9]
+var array1 = [5,6,7,2,10]
 var array2 = [2,1,5,7,8,9,6]
 var array3 = []
 var n = 0  
