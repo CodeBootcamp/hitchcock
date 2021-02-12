@@ -1,21 +1,21 @@
 var array1 = [5,6,7,2,10]
 var array2 = [2,1,5,7,8,9,6]
 var array3 = []
-var n = 0  
+ 
 var b = 0
 var x = 0
-var y = 0
+
 // solved problem
-for(n=0; n<array1.length; n++){
+for(var n=0; n<array1.length; n++){
     
-    for(y=0; y<array2.length; y++){
+    for(var y=0; y<array2.length; y++){
         if(array1[n] == array2 [y]){
-            array3[x] = array1[n]
-            x++
+            array3.push(array1[n])
+           
         }
     
     }
-    y=0
+    
 }
 console.log(array3)
 //third attempt
