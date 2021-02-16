@@ -1,26 +1,31 @@
-let go = 100
-let run = 50
-
-function minus(value, value2){
-   let value3 = value - value2
-   return value3
-}
-var rand = function getRand(){
-    let x = Math.floor(Math.random()*11)
-    return x
-}
-function randLoop(val){
-let y = 0
-let b = 0
-let newVal = []
-for(b=0; b<rand; b++){
- y++
- var newVal[y] = val + rand 
-     
-}
-} 
+const para = document.getElementById('p1')
+const header = document.getElementById('header')
+const input = document.getElementById('input')
+const select = document.getElementById('select')
+const select1 = document.getElementById('select1')
+const div1 = document.getElementById('div1')
+var str
 
 
-console.log(minus(run,go))
-console.log(rand)
-console.log(randLoop(20))
+input.addEventListener('input', function hello1(){
+ 
+ str = input.value 
+ 
+ 
+})
+para.addEventListener('click', function paraStr(){
+    para.innerText = str 
+})
+header.addEventListener('click', function headerStr(){
+    header.innerText = str
+    
+})
+
+select.addEventListener('click', function changeColor(){
+    header.style.backgroundColor = select.value
+})
+
+select1.addEventListener('click', function changePic(){
+    header.style.backgroundImage = "cat.jfif"
+    console.log('hello')
+})
