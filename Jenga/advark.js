@@ -3,7 +3,9 @@ const header = document.getElementById('header')
 const input = document.getElementById('input')
 const select = document.getElementById('select')
 const select1 = document.getElementById('select1')
-const div1 = document.getElementById('div1')
+
+const btn = document.getElementById('btn')
+const div1 = document.getElementById('header2')
 var str
 
 
@@ -17,15 +19,19 @@ para.addEventListener('click', function paraStr(){
     para.innerText = str 
 })
 header.addEventListener('click', function headerStr(){
-    header.innerText = str
+    header.classList.toggle('header1')
     
 })
 
 select.addEventListener('click', function changeColor(){
     header.style.backgroundColor = select.value
+    if(select.value === 'blue'){
+        para.innerText = 'blue is awesome'
+    }
 })
 
-select1.addEventListener('click', function changePic(){
-    header.style.backgroundImage = "cat.jfif"
-    console.log('hello')
+btn.addEventListener('click', function changePic(){
+    div1.classList = select1.value
+   console.log(select1.value)
 })
+
