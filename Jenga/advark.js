@@ -17,6 +17,7 @@ input.addEventListener('input', function hello1(){
 })
 para.addEventListener('click', function paraStr(){
     para.innerText = str 
+    
 })
 header.addEventListener('click', function headerStr(){
     header.classList.toggle('header1')
@@ -32,6 +33,20 @@ select.addEventListener('click', function changeColor(){
 
 btn.addEventListener('click', function changePic(){
     div1.classList = select1.value
-   console.log(select1.value)
+    if(select1.value === 'cat'){
+        header.innerText = "Cats are Mysterious"
+    }
+    if(select1.value === 'dog'){
+        header.innerText = 'Dogs are mans best friend'
+    }
+    if(select1.value === 'lizard'){
+        header.classList.toggle('null')
+        para.innerText = 'Lizards are the shiznit'
+    }
+
+   if(header.className = 'null'){
+      console.log("Ohhh nooo")
+   }
+   
 })
 
