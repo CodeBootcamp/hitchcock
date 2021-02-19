@@ -3,7 +3,7 @@ const header = document.getElementById('header')
 const input = document.getElementById('input')
 const select = document.getElementById('select')
 const select1 = document.getElementById('select1')
-
+const select3 = document.getElementById('select3')
 const btn = document.getElementById('btn')
 const div1 = document.getElementById('header2')
 var str
@@ -35,6 +35,7 @@ btn.addEventListener('click', function changePic(){
     div1.classList = select1.value
     if(select1.value === 'cat'){
         header.innerText = "Cats are Mysterious"
+        para.innerHTML = '<select id = "select3" class = "select3"><option value = "jake"> Jake</option></select>'
     }
     if(select1.value === 'dog'){
         header.innerText = 'Dogs are mans best friend'
@@ -42,6 +43,7 @@ btn.addEventListener('click', function changePic(){
     if(select1.value === 'lizard'){
         header.classList.toggle('null')
         para.innerText = 'Lizards are the shiznit'
+        
     }
 
    if(header.className = 'null'){
